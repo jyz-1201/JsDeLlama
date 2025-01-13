@@ -1,0 +1,23 @@
+{
+  "data_path": "./datasets/instruct_onetask",
+  "output_dir": "./outputs/instruction_tuning_codellama_onetask_2e4_16epoch",
+  "infer_exp_name": "1beams",
+  "bestofN_num_beams": 1,
+  "model_name_or_path": "meta-llama/CodeLlama-7b-hf",
+  "do_train": true,
+  "do_predict": true,
+  "num_train_epochs": 3,
+  "per_device_train_batch_size": 4,
+  "per_device_eval_batch_size": 1,
+  "gradient_accumulation_steps": 1,
+  "gradient_checkpointing": true,
+  "optim": "paged_adamw_32bit",
+  "logging_steps": 10,
+  "save_strategy": "epoch",
+  "learning_rate": 2e-4,
+  "fp16": true,
+  "max_grad_norm": 0.3,
+  "warmup_ratio": 0.03,
+  "lr_scheduler_type": "constant",
+  "disable_tqdm": false
+}
