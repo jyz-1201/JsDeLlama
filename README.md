@@ -94,6 +94,10 @@ Run the following command to submit batch jobs to Slurm for evaluation:
 
 This will invoke python script `./codes/evaluators/CNmain.py` for certain obfuscation techniques and specified models and experiments names in the .sh file and print the results into its output logs. The detailed metrics file will be stored in the same directory, adding the suffix ".metric".
 
+## Baselines
+
+Implementations of baselines can be found in `codes/deobfuscators/deobfuscate_codenet.py` and `codes/deobfuscators/infer_oneshot.py`.
+
 
 ## Acks
 
